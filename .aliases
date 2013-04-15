@@ -125,3 +125,10 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+# SJL Stuff
+alias lk="cd ~/Projects/Littleknown"
+alias lks="cd ~/Sites/lksite"
+alias sis="cd ~/Projects/Littleknown/Infusionsoft"
+alias mpm="cd ~/Projects/Littleknown/MailPluginManager"
+alias sig="cd ~/Projects/Littleknown/SigProMaint"
