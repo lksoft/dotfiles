@@ -45,3 +45,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # rbenv setup 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export RBENV_ROOT=/usr/local/opt/rbenv
+
+# add rbenv shims to PATH
+export PATH="$RBENV_ROOT/shims:$PATH"
