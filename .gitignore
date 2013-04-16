@@ -13,6 +13,7 @@ Thumbs.db
 .preview-mode
 
 # Xcode stuff
+/build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
