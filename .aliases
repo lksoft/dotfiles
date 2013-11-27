@@ -133,3 +133,5 @@ alias tlv="cd ~/Projects/Littleknown/Infusionsoft"
 alias mpm="cd ~/Projects/Littleknown/MailPluginManager"
 alias sig="cd ~/Projects/Littleknown/SigProMaint"
 alias mao="cd ~/Projects/Indev/MAO3"
+
+alias watson="/usr/local/opt/rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/watson-ruby-1.1.3/bin/watson -s dirty"
