@@ -3,6 +3,8 @@
 command regex rd 's/^[[:space:]]*$/po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]/' 's/^(.+)$/po [%1 recursiveDescription]/'
 # prect: print the properties of a rect
 command regex prect 's/(.+)/print (CGRect)%1/'
+# pb: print a BOOL
+command regex pb 's/(.+)/print (BOOL)%1/'
 # psel: print a selector
 command regex psel 's/(.+)/print (char *)%1/'
 # simg: save an image
