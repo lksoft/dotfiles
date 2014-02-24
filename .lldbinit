@@ -1,4 +1,13 @@
 # from https://gist.github.com/mike3k/4513568
+
+# Print objects in registers
+command alias rax expression -O  --  $rax
+command alias rdi expression -O  --  $rdi
+command alias po1 expression -O  --  $rdx
+command alias po2 expression -O  --  $rcx
+command alias po3 expression -O  --  $r8
+command alias po4 expression -O  --  $r9
+
 # rd: print a recursive description of views
 command regex rd 's/^[[:space:]]*$/po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]/' 's/^(.+)$/po [%1 recursiveDescription]/'
 # prect: print the properties of a rect
@@ -13,3 +22,5 @@ command regex simg 's|^([^ ]+) (.+)$|expr (BOOL)[[%1 TIFFRepresentation] writeTo
 command regex plog 's|^([^ ]+) (.+)$|po [%2 stringByAppendingString:[((NSObject *)%1) description]]|'
 # prct: print a rect within a string
 command regex prct 's|^([^ ]+) (.+)$|po [%2 stringByAppendingString:((NSString *)NSStringFromRect(%1))]|'
+# decode: print a string from data
+command regex decode 's|(.+)|po [[NSString alloc] initWithData:(id)%1 encoding:4]|'

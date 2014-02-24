@@ -129,7 +129,7 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 # SJL Stuff
 alias lk="cd ~/Projects/Littleknown"
 alias lks="cd ~/Sites/lksite"
-alias tlv="cd ~/Projects/Littleknown/Infusionsoft"
+alias tlv="cd ~/Projects/Littleknown/Tealeaves"
 alias mpm="cd ~/Projects/Littleknown/MailPluginManager"
 alias sig="cd ~/Projects/Littleknown/SigProMaint"
 alias mao="cd ~/Projects/Indev/MAO3"
