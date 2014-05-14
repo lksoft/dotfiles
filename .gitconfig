@@ -27,8 +27,8 @@
 	undopush = push -f origin HEAD^:master
 
 [apply]
-	# Detect whitespace errors when applying a patch
-	whitespace = fix
+	# Don't detect whitespace errors when applying a patch
+	#whitespace = fix
 
 [core]
 	# Use custom `.gitignore` and `.gitattributes`
