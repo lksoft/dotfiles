@@ -19,7 +19,7 @@ command regex psel 's/(.+)/print (char *)%1/'
 # simg: save an image
 command regex simg 's|^([^ ]+) (.+)$|expr (BOOL)[[%1 TIFFRepresentation] writeToFile:(NSString *)[[@"/Users/scott/Downloads/DebugImages/" stringByAppendingString:(NSString *)%2] stringByAppendingPathExtension:@"tiff"] atomically:YES]|'
 # plog: for use in logging a value with a string precursor in breakpoints
-command regex plog 's|^(@"[^"]+") \(([^\)]*)\)$|po [%1 stringByAppendingString:((%2==nil)?@"(null)":[((NSObject *)%2) description])]|'
+command regex plog 's|^(@"[^"]+") {([^}]*)}$|po [%1 stringByAppendingString:((%2==nil)?@"(null)":[((NSObject *)%2) description])]|'
 # prct: print a rect within a string
 command regex prct 's|^([^ ]+) (.+)$|po [%2 stringByAppendingString:((NSString *)NSStringFromRect(%1))]|'
 # decode: print a string from data
