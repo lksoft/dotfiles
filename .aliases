@@ -140,3 +140,5 @@ alias indev="cd ~/Projects/Indev"
 alias watson="/usr/local/opt/rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/watson-ruby-1.1.3/bin/watson -s dirty"
 
 alias gitver="git log --pretty=format:'' | wc -l | sed 's/[ \t]//g'"
+
+alias shrinkvm="sudo /Library/Application\ Support/VMware\ Tools/vmware-tools-cli disk shrink /"
