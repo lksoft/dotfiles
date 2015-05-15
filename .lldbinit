@@ -8,6 +8,8 @@ command alias po2 expression -O  --  $rcx
 command alias po3 expression -O  --  $r8
 command alias po4 expression -O  --  $r9
 
+command alias foundation expr @import Foundation
+
 # rd: print a recursive description of views
 command regex rd 's/^[[:space:]]*$/po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]/' 's/^(.+)$/po [%1 recursiveDescription]/'
 # prect: print the properties of a rect
