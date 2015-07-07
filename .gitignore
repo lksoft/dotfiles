@@ -24,6 +24,7 @@ Thumbs.db
 !default.perspectivev3
 !default.xcworkspace
 xcuserdata
+xcuserdata/
 *.xccheckout
 *.moved-aside
 *~.nib/
