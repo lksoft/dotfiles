@@ -9,6 +9,7 @@ command alias po3 expression -O  --  $r8
 command alias po4 expression -O  --  $r9
 
 command alias foundation expr @import Foundation
+command alias appkit expr @import AppKit
 
 # rd: print a recursive description of views
 command regex rd 's/^[[:space:]]*$/po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]/' 's/^(.+)$/po [%1 recursiveDescription]/'
@@ -26,6 +27,12 @@ command regex plog 's|^(@"[^"]+") {([^}]*)}$|po [%1 stringByAppendingString:((%2
 command regex prct 's|^([^ ]+) (.+)$|po [%2 stringByAppendingString:((NSString *)NSStringFromRect(%1))]|'
 # decode: print a string from data
 command regex decode 's|(.+)|po [[NSString alloc] initWithData:(id)%1 encoding:4]|'
+# showlayout: print the auto layout trace
+command regex showlayout 's/(.+)/po [%1 _tk_autolayoutTrace]/'
+# showconstraints: print the constraints affect a view
+command regex showconstraints 's/(.+)/po [%1 constraintsAffectingLayoutForOrientation:NSLayoutConstraintOrientationHorizontal]/'
+# sshowconstraints: print the constraints affect a view (in swift)
+command regex sshowconstraints 's/(.+)/po %1.constraintsAffectingLayoutForOrientation(NSLayoutConstraintOrientation.Horizontal)/'
 
 
 command script import /Users/scott/bin/chisel/fblldb.py
