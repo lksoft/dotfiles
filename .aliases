@@ -142,3 +142,5 @@ alias watson="/usr/local/opt/rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/wa
 alias gitver="git log --pretty=format:'' | wc -l | sed 's/[ \t]//g'"
 
 alias shrinkvm="sudo /Library/Application\ Support/VMware\ Tools/vmware-tools-cli disk shrink /"
+
+alias nscurls="nscurl --verbose --ats-diagnostics"
