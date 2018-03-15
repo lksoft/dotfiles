@@ -35,4 +35,4 @@ command regex showconstraints 's/(.+)/po [%1 constraintsAffectingLayoutForOrient
 command regex sshowconstraints 's/(.+)/po %1.constraintsAffectingLayoutForOrientation(NSLayoutConstraintOrientation.Horizontal)/'
 
 
-command script import /Users/scott/bin/chisel/fblldb.py
+command script import /usr/local/opt/chisel/libexec/fblldb.py
