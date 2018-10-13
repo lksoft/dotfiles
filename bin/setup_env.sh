@@ -46,4 +46,5 @@ mv webmin-${1}.conf /etc/webmin/miniserv.conf
 echo "sc${1}${SUPPLEMENTAL_NAME}.smallcubed.com" > /etc/hostname
 hostname "sc${1}${SUPPLEMENTAL_NAME}.smallcubed.com"
 
-
+# clean the AWS stuff to ensure proper CloudWatch values are sent
+rm -R /var/tmp/aws-mon/*
