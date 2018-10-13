@@ -34,7 +34,7 @@ certbot certonly --webroot -w /var/www/lets.smallcubed.com -d sc${1}.smallcubed.
 certbot renew
 
 # Update the apachec config and restart again
-sed -e s/XX/${1}/g ~/.ec2_conf/apache${TYPE}> apache-${1}.conf
+sed -e s/XX/${1}/g ~/.ec2_conf/apache${TYPE}.conf> apache-${1}.conf
 mv apache-${1}.conf /etc/apache2/sites-available/000-default.conf
 apachectl -k restart
 
