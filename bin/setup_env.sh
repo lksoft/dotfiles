@@ -25,7 +25,7 @@ if [ "$2" != "" ]; then
 fi
 
 # Update apache with the pre Let's Encrypt server config and restart
-sed -e s/XX/${1}/g ~/.aws_conf/pre-le-apache.conf > apache-${1}.conf
+sed -e s/XX/${1}/g ~/.ec2_conf/pre-le-apache.conf > apache-${1}.conf
 mv apache-${1}.conf /etc/apache2/sites-available/000-default.conf
 apachectl -k restart
 
@@ -34,12 +34,12 @@ certbot certonly --webroot -w /var/www/lets.smallcubed.com -d sc${1}.smallcubed.
 certbot renew
 
 # Update the apachec config and restart again
-sed -e s/XX/${1}/g ~/.aws_conf/apache${TYPE}> apache-${1}.conf
+sed -e s/XX/${1}/g ~/.ec2_conf/apache${TYPE}> apache-${1}.conf
 mv apache-${1}.conf /etc/apache2/sites-available/000-default.conf
 apachectl -k restart
 
 # Rewrite the webmin config to use the correct cert file & restart
-sed -e s/scXX/sc${1}/g ~/.aws_conf/webmin.conf > webmin-${1}.conf
+sed -e s/scXX/sc${1}/g ~/.ec2_conf/webmin.conf > webmin-${1}.conf
 mv webmin-${1}.conf /etc/webmin/miniserv.conf
 /etc/init.d/webmin restart
 
