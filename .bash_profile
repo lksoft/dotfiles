@@ -49,5 +49,5 @@ export RBENV_ROOT=/usr/local/opt/rbenv
 # add rbenv shims to PATH
 export PATH="$RBENV_ROOT/shims:$PATH"
 
-# Add values for my development environment
-export DELETE_MPM_IN_APPS_FOLDER="YES"
+# Hide Apple's shell deprecation warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
