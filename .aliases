@@ -127,15 +127,6 @@ alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # SJL Stuff
-alias lk="cd ~/Projects/Littleknown"
-alias lks="cd ~/Sites/lksite"
-alias tlv="cd ~/Projects/Littleknown/Tealeaves"
-alias mpm="cd ~/Projects/Littleknown/MailPluginManager"
-alias sig="cd ~/Projects/Littleknown/SigProMaint"
-alias mao="cd ~/Projects/Indev/Mail\ Act-On"
-alias mt="cd ~/Projects/Indev/MailTags"
-alias mart="cd ~/Projects/Indev/Martlet"
-alias indev="cd ~/Projects/Indev"
 
 alias watson="/usr/local/opt/rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/watson-ruby-1.1.3/bin/watson -s dirty"
 
