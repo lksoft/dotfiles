@@ -48,3 +48,6 @@ export RBENV_ROOT=/usr/local/opt/rbenv
 
 # add rbenv shims to PATH
 export PATH="$RBENV_ROOT/shims:$PATH"
+
+# Hide Apple's shell deprecation warning
+export BASH_SILENCE_DEPRECATION_WARNING=1
