@@ -28,6 +28,9 @@ xcuserdata/
 *.moved-aside
 *~.nib/
 
+# other editors
+.nova
+
 # old skool
 .svn
 
