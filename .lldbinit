@@ -36,3 +36,4 @@ command regex sshowconstraints 's/(.+)/po %1.constraintsAffectingLayoutForOrient
 
 
 command script import /usr/local/opt/chisel/libexec/fblldb.py
+command script import "/Users/scott/Library/Application Support/Kaleidoscope/lldb_ksdiff.py"

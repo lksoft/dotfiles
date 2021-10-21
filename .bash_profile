@@ -51,3 +51,7 @@ export PATH="$RBENV_ROOT/shims:$PATH"
 
 # Hide Apple's shell deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# Sets up AWS and EasyDNS environment variables if they exist
+[ -e "$HOME/.aws/aws_env" ] && source "$HOME/.aws/aws_env"
+[ -e "$HOME/.easydns_env" ] && source "$HOME/.easydns_env"
