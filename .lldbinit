@@ -34,6 +34,4 @@ command regex showconstraints 's/(.+)/po [%1 constraintsAffectingLayoutForOrient
 # sshowconstraints: print the constraints affect a view (in swift)
 command regex sshowconstraints 's/(.+)/po %1.constraintsAffectingLayoutForOrientation(NSLayoutConstraintOrientation.Horizontal)/'
 
-
-command script import /usr/local/opt/chisel/libexec/fblldb.py
 command script import "/Users/scott/Library/Application Support/Kaleidoscope/lldb_ksdiff.py"
