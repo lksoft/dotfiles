@@ -126,8 +126,6 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
-# SJL Stuff
-
 alias watson="/usr/local/opt/rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/watson-ruby-1.1.3/bin/watson -s dirty"
 
 alias gitver="git log --pretty=format:'' | wc -l | sed 's/[ \t]//g'"
