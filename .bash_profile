@@ -47,7 +47,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export RBENV_ROOT=/usr/local/opt/rbenv
 
 # add rbenv shims to PATH
-export PATH="$RBENV_ROOT/shims:$PATH"
+export PATH="$RBENV_ROOT/shims:/usr/local/opt/python/libexec/bin:$PATH"
 
 # Hide Apple's shell deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
