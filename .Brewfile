@@ -64,6 +64,7 @@ cask "spamsieve"
 cask "sync"
 cask "transmit"
 cask "unexpectedly"
+cask "sequel-ace"
 
 # Mac App Store Apps
 mas "1Blocker", id:1365531024  
