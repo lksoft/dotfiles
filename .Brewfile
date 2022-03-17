@@ -42,6 +42,7 @@ cask_args appdir: "/Applications/Local", require_sha: true
 # Some Apps (should go in Local though)
 cask "carbon-copy-cloner"
 cask "1password"
+cask "airbuddy"
 cask "alfred"
 cask "base"
 cask "bbedit"
@@ -54,7 +55,7 @@ cask "coderunner"
 cask "daisydisk"
 cask "homebrew/cask/dash"
 cask "fork"
-cask "google-chrome"
+cask "omnigraffle"
 cask "kaleidoscope"
 cask "nova"
 cask "opera"
@@ -69,15 +70,18 @@ cask "sequel-ace"
 # Mac App Store Apps
 mas "1Blocker", id:1365531024  
 mas "Hush", id:1544743900  
-mas "StopTheMadness", id:1376402589  
+mas "StopTheMadness", id:1376402589
+mas "Vinegar", id:1591303229
 
 mas "Tot", id:1491071483  
-mas "Things", id:904280696   
 mas "Speedtest", id:1153157709  
+mas "Slack", id:803453959
 
 mas "xScope", id:889428659   
 mas "SourceryPro", id:1561780836  
 mas "Boop", id:1518425043  
 mas "PLIST", id:1157491961  
 mas "JSON", id:567740330   
-mas "Xcode", id: 497799835
+mas "DNS Client", id:1517487743
+mas "Marked 2", id:1157491961
+mas "MacTracker", id:430255202
