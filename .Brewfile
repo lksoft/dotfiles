@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "homebrew/cask-fonts"
 tap "buo/cask-upgrade"
 
 # Mac App Store
@@ -66,6 +67,9 @@ cask "sync"
 cask "transmit"
 cask "unexpectedly"
 cask "sequel-ace"
+cask "backblaze"
+cask "sf-symbols"
+cask "font-maven-pro"
 
 # Mac App Store Apps
 mas "1Blocker", id:1365531024  
