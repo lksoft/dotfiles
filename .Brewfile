@@ -40,7 +40,7 @@ brew "terminal-notifier"
 brew "uncrustify"
 
 # set arguments for all 'brew install --cask' commands
-cask_args appdir: "/Applications/Local", require_sha: false
+cask_args appdir: "/Applications/Local", require_sha: true
 # Some Apps (should go in Local though)
 cask "carbon-copy-cloner"
 cask "sync"
