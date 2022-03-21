@@ -43,13 +43,13 @@ brew "uncrustify"
 cask_args appdir: "/Applications/Local", require_sha: false
 # Some Apps (should go in Local though)
 cask "carbon-copy-cloner"
+cask "sync"
 cask "1password"
 cask "airbuddy"
 cask "alfred"
 cask "base"
 cask "bbedit"
 cask "betterzip"
-cask "google-chrome"
 cask "firefox"
 cask "brave-browser"
 cask "coderunner"
@@ -63,7 +63,6 @@ cask "opera"
 cask "paw"
 cask "proxyman"
 cask "spamsieve"
-cask "sync"
 cask "transmit"
 cask "unexpectedly"
 cask "sequel-ace"
@@ -74,6 +73,9 @@ cask "marked"
 cask "mactracker"
 cask "slack"
 
+# These don't have the proper sha
+cask "google-chrome"
+
 # Mac App Store Apps
 # mas "1Blocker", id:1365531024  
 # mas "Hush", id:1544743900  
@@ -82,7 +84,6 @@ cask "slack"
 
 # mas "Tot", id:1491071483  
 # mas "Speedtest", id:1153157709  
-## mas "Slack", id:803453959
 
 # mas "SourceryPro", id:1561780836  
 # mas "Boop", id:1518425043  
