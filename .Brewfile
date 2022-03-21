@@ -5,6 +5,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask-fonts"
 tap "buo/cask-upgrade"
+tap "shivammathur/php"
 
 # Mac App Store
 brew "mas"
@@ -28,7 +29,7 @@ brew "libusb-compat"
 # MAMP setup
 brew "httpd", restart_service: true
 brew "mysql@5.7", restart_service: true
-brew "php@7.3"
+brew "shivammathur/php/php@7.3"
 
 # Node and ruby 
 brew "node"
