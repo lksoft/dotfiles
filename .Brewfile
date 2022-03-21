@@ -43,7 +43,6 @@ brew "uncrustify"
 cask_args appdir: "/Applications/Local", require_sha: true
 # Some Apps (should go in Local though)
 cask "carbon-copy-cloner"
-cask "sync"
 cask "1password"
 cask "airbuddy"
 cask "alfred"
@@ -53,7 +52,6 @@ cask "betterzip"
 cask "firefox"
 cask "brave-browser"
 cask "coderunner"
-cask "daisydisk"
 cask "homebrew/cask/dash"
 cask "fork"
 cask "omnigraffle"
@@ -64,17 +62,20 @@ cask "paw"
 cask "proxyman"
 cask "spamsieve"
 cask "transmit"
-cask "unexpectedly"
 cask "sequel-ace"
 cask "sf-symbols"
-cask "font-maven-pro"
 cask "xscope"
 cask "marked"
 cask "mactracker"
 cask "slack"
 
-# These don't have the proper sha
+# These don't have sha256 defined
+cask_args appdir: "/Applications/Local", require_sha: false
+cask "sync"
+cask "daisydisk"
 cask "google-chrome"
+cask "font-maven-pro"
+cask "unexpectedly"
 
 # Mac App Store Apps
 # mas "1Blocker", id:1365531024  
