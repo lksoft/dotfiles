@@ -38,6 +38,7 @@ brew "rbenv"
 brew "swiftformat"
 brew "terminal-notifier"
 brew "uncrustify"
+brew "npm"
 
 # set arguments for all 'brew install --cask' commands
 cask_args appdir: "/Applications/Local", require_sha: true

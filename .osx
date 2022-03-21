@@ -163,7 +163,7 @@ defaults write com.apple.terminal StringEncodings -array 4
 
 # Use a modified version of the Pro theme by default in Terminal.app
 open "$HOME/.SJLPro.terminal"
-sleep 1 # Wait a bit to make sure the theme is loaded
+sleep 3 # Wait a bit to make sure the theme is loaded
 defaults write com.apple.terminal "Default Window Settings" -string ".SJLPro"
 defaults write com.apple.terminal "Startup Window Settings" -string ".SJLPro"
 
@@ -209,6 +209,16 @@ defaults write com.apple.appstore WebKitDeveloperExtras -bool true
 
 # Enable Debug Menu in the Mac App Store
 # defaults write com.apple.appstore ShowDebugMenu -bool true
+
+##################
+#
+# Setup working environments
+#
+##################
+#
+
+# Install zcli for Zendesk coding
+npm install @zendesk/zcli -g
 
 ###############################################################################
 # Kill affected applications                                                  #
