@@ -69,6 +69,7 @@ cask "xscope"
 cask "marked"
 cask "mactracker"
 cask "slack"
+cask "xcodes"
 
 # These don't have sha256 defined
 cask_args appdir: "/Applications/Local", require_sha: false
