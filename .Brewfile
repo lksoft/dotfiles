@@ -88,7 +88,7 @@ cask "unexpectedly"
 
 # mas "Tot", id:1491071483  
 # mas "Speedtest", id:1153157709  
-# mas "Things 3", id:?? (SLK account)
+# mas "Things 3", id:904280696 (SLK account)
 
 # mas "SourceryPro", id:1561780836  
 # mas "Boop", id:1518425043  
