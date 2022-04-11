@@ -22,7 +22,7 @@ brew "libidn2"
 brew "exiftool"
 brew "fish"
 brew "unixodbc"
-brew "git-flow"
+brew "git-flow-avh"
 brew "jq"
 brew "libusb-compat"
 
