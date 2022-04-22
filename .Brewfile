@@ -71,6 +71,11 @@ cask "mactracker"
 cask "slack"
 cask "xcodes"
 cask "dropdmg"
+cask "apparency"
+cask "suspicious-package"
+cask “keyboardcleantool”
+cask “bettertouchtool”
+cask “coconutbattery”
 
 # These don't have sha256 defined
 cask_args appdir: "/Applications/Local", require_sha: false
