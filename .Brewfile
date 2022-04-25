@@ -40,6 +40,10 @@ brew "terminal-notifier"
 brew "uncrustify"
 brew "npm"
 
+# These casks should avoid the appdir directive
+cask "qlcolorcode"
+cask "qlmarkdown"
+
 # set arguments for all 'brew install --cask' commands
 cask_args appdir: "/Applications/Local", require_sha: true
 # Some Apps (should go in Local though)
@@ -74,7 +78,6 @@ cask "dropdmg"
 cask "apparency"
 cask "suspicious-package"
 cask “keyboardcleantool”
-cask “bettertouchtool”
 cask “coconutbattery”
 
 # These don't have sha256 defined
