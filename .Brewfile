@@ -42,11 +42,11 @@ brew "npm"
 
 # These casks should avoid the appdir directive
 cask "qlcolorcode"
-cask "qlmarkdown"
 
 # set arguments for all 'brew install --cask' commands
 cask_args appdir: "/Applications/Local", require_sha: true
 # Some Apps (should go in Local though)
+cask "qlmarkdown"
 cask "carbon-copy-cloner"
 cask "1password"
 cask "airbuddy"
