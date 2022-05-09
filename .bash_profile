@@ -42,12 +42,15 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
+# Homebrew home
+export HOMEBREW_PREFIX=`brew --prefix`
+
 # rbenv setup 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export RBENV_ROOT=/usr/local/opt/rbenv
+export RBENV_ROOT="$HOMEBREW_PEFIX/opt/rbenv"
 
 # add rbenv shims to PATH
-export PATH="$RBENV_ROOT/shims:/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="$RBENV_ROOT/shims:$HOMEBREW_PEFIX/opt/python/libexec/bin:$PATH"
 
 # Hide Apple's shell deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
