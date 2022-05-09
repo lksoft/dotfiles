@@ -48,7 +48,6 @@ cask_args appdir: "/Applications/Local", require_sha: true
 # Some Apps (should go in Local though)
 cask "qlmarkdown"
 cask "carbon-copy-cloner"
-cask "1password"
 cask "airbuddy"
 cask "alfred"
 cask "base"
@@ -75,9 +74,6 @@ cask "mactracker"
 cask "slack"
 cask "xcodes"
 cask "dropdmg"
-cask "apparency"
-cask "suspicious-package"
-cask "keyboardcleantool"
 cask "coconutbattery"
 
 # These don't have sha256 defined
@@ -87,18 +83,23 @@ cask "daisydisk"
 cask "google-chrome"
 cask "font-maven-pro"
 cask "unexpectedly"
+cask "apparency"
+cask "suspicious-package"
+cask "keyboardcleantool"
 
 # Mac App Store Apps
-# mas "1Blocker", id:1365531024  
-# mas "Hush", id:1544743900  
-# mas "StopTheMadness", id:1376402589
-# mas "Vinegar", id:1591303229
+# Tot
+# 1Password for Safari
+# Things (SLK account)
 
-# mas "Tot", id:1491071483  
-# mas "Speedtest", id:1153157709  
-# mas "Things 3", id:904280696 (SLK account)
+# 1Blocker
+# Hush
+# StopTheMadness
+# Vinegar
 
-# mas "SourceryPro", id:1561780836  
-# mas "Boop", id:1518425043  
-# mas "PLIST", id:1157491961  
-# mas "JSON", id:567740330   
+# Speedtest
+
+# SourceryPro
+# Boop
+# PLIST
+# JSON
