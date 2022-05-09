@@ -25,8 +25,10 @@ brew "unixodbc"
 brew "git-flow-avh"
 brew "jq"
 brew "libusb-compat"
+brew "terminal-notifier"
+brew "uncrustify"
 
-# MAMP setup
+# AMP setup
 brew "httpd", restart_service: true
 brew "mysql@5.7", restart_service: true
 brew "shivammathur/php/php@7.3"
@@ -36,8 +38,6 @@ brew "node"
 brew "python@3.9"
 brew "rbenv"
 brew "swiftformat"
-brew "terminal-notifier"
-brew "uncrustify"
 brew "npm"
 
 # These casks should avoid the appdir directive
@@ -76,7 +76,7 @@ cask "xcodes"
 cask "dropdmg"
 cask "coconutbattery"
 
-# These don't have sha256 defined
+# -- These don't have sha256 defined
 cask_args appdir: "/Applications/Local", require_sha: false
 cask "sync"
 cask "daisydisk"
@@ -87,19 +87,18 @@ cask "apparency"
 cask "suspicious-package"
 cask "keyboardcleantool"
 
-# Mac App Store Apps
+# -- Mac App Store Apps
 # Tot
 # 1Password for Safari
 # Things (SLK account)
-
-# 1Blocker
-# Hush
-# StopTheMadness
-# Vinegar
-
-# Speedtest
 
 # SourceryPro
 # Boop
 # PLIST
 # JSON
+
+# 1Blocker
+# Hush
+# StopTheMadness
+# Vinegar
+# Speedtest
