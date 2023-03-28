@@ -42,19 +42,25 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
-# Homebrew home
+# Homebrew & rbenv home
 export HOMEBREW_PREFIX=`brew --prefix`
+export RBENV_ROOT="$HOMEBREW_PREFIX/opt/rbenv"
 
-# rbenv setup 
+# rbenv setup
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-export RBENV_ROOT="$HOMEBREW_PEFIX/opt/rbenv"
 
 # add rbenv shims to PATH
-export PATH="$RBENV_ROOT/shims:$HOMEBREW_PEFIX/opt/python/libexec/bin:$PATH"
+export PATH="$RBENV_ROOT/shims:/opt/homebrew/opt/python/libexec/bin:$PATH"
 
 # Hide Apple's shell deprecation warning
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# Sets up AWS and EasyDNS environment variables if they exist
-[ -e "$HOME/.aws/aws_env" ] && source "$HOME/.aws/aws_env"
-[ -e "$HOME/.easydns_env" ] && source "$HOME/.easydns_env"
+# Sets up AWS and EasyDNS environment variables to use 1Password
+export EASYDNS_TOKEN_LK=op://Personal/EasyDNS-LK/PROD-API/Token
+export EASYDNS_KEY_LK=op://Personal/EasyDNS-LK/PROD-API/Key
+export EASYDNS_TOKEN_SC=op://sccli/EasyDNS-SC/PROD-API/Token
+export EASYDNS_KEY_SC=op://sccli/EasyDNS-SC/PROD-API/Key
+export AWS_ACCESS_KEY_SC=op://sccli/AWS-Cred-SC/PROD-API/Token
+export AWS_SECRET_ACCESS_SC=op://sccli/AWS-Cred-SC/PROD-API/Key
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
