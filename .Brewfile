@@ -50,7 +50,6 @@ cask "qlmarkdown"
 cask "carbon-copy-cloner"
 cask "airbuddy"
 cask "alfred"
-cask "base"
 cask "bbedit"
 cask "betterzip"
 cask "firefox"
@@ -63,7 +62,7 @@ cask "kaleidoscope"
 cask "nova"
 cask "opera"
 cask "orion"
-cask "paw"
+cask "rapidapi"
 cask "proxyman"
 cask "spamsieve"
 cask "transmit"
@@ -76,6 +75,12 @@ cask "slack"
 cask "xcodes"
 cask "dropdmg"
 cask "coconutbattery"
+cask "sloth"
+cask "marsedit"
+cask "microblog"
+cask "screens"
+cask "surfshark"
+
 
 # -- These don't have sha256 defined
 cask_args appdir: "/Applications/Local", require_sha: false
@@ -103,3 +108,9 @@ cask "keyboardcleantool"
 # StopTheMadness
 # Vinegar
 # Speedtest
+
+# -- Other Apps
+# Photos Workbench
+# Pasteboard Viewer
+# Rest Time
+# World Clock Deluxe
