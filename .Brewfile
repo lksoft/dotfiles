@@ -102,12 +102,15 @@ cask "keyboardcleantool"
 # Boop
 # PLIST
 # JSON
+# Speedtest
+# Scrobbles for Last.fm
+# Parallels
+# NepTunes
 
 # 1Blocker
 # Hush
 # StopTheMadness
 # Vinegar
-# Speedtest
 
 # -- Other Apps
 # Photos Workbench
