@@ -42,6 +42,8 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Homebrew & rbenv home
 export HOMEBREW_PREFIX=`brew --prefix`
 export RBENV_ROOT="$HOMEBREW_PREFIX/opt/rbenv"
@@ -63,4 +65,3 @@ export EASYDNS_KEY_SC=op://sccli/EasyDNS-SC/PROD-API/Key
 export AWS_ACCESS_KEY_SC=op://sccli/AWS-Cred-SC/PROD-API/Token
 export AWS_SECRET_ACCESS_SC=op://sccli/AWS-Cred-SC/PROD-API/Key
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
