@@ -20,7 +20,6 @@ brew "xz"
 brew "awscli"
 brew "libidn2"
 brew "exiftool"
-brew "fish"
 brew "unixodbc"
 brew "git-flow-avh"
 brew "jq"
@@ -58,10 +57,12 @@ cask "surfshark"
 # set arguments for all 'brew install --cask' commands
 cask_args appdir: "/Applications/Local", require_sha: true
 # Some Apps (should go in Local though)
+cask "alfred"
+cask "orion"
+cask "xcodes"
 cask "qlmarkdown"
 cask "carbon-copy-cloner"
 cask "airbuddy"
-cask "alfred"
 cask "bbedit"
 cask "betterzip"
 cask "firefox"
@@ -84,19 +85,21 @@ cask "xscope"
 cask "marked"
 cask "mactracker"
 cask "slack"
-cask "xcodes"
 cask "dropdmg"
 cask "coconutbattery"
 cask "sloth"
 cask "marsedit"
 cask "microblog"
 cask "screens"
-
+cask "virtualbuddy"
+cask "localsend"
+cask "ghostty"
 
 # -- Mac App Store Apps
 # Tot
 # 1Password for Safari
 # Things (SLK account)
+# ScreenFloat
 
 # SourceryPro
 # Boop
@@ -106,11 +109,6 @@ cask "screens"
 # Scrobbles for Last.fm
 # Parallels
 # NepTunes
-
-# 1Blocker
-# Hush
-# StopTheMadness
-# Vinegar
 
 # -- Other Apps
 # Photos Workbench
