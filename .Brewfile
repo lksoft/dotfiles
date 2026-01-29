@@ -5,7 +5,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask-fonts"
 tap "buo/cask-upgrade"
-tap "shivammathur/php"
+# tap "shivammathur/php"
 
 # Mac App Store
 brew "mas"
@@ -29,10 +29,10 @@ brew "uncrustify"
 
 # AMP setup
 brew "httpd", restart_service: true
-brew "mysql@5.7", restart_service: true
-brew "shivammathur/php/php@7.3"
+# brew "mysql@5.7", restart_service: true
+# brew "shivammathur/php/php@7.3"
 
-# Node and ruby 
+# Node and ruby
 brew "node"
 brew "python@3.9"
 brew "rbenv"
