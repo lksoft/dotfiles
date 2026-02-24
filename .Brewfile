@@ -5,10 +5,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask-fonts"
 tap "buo/cask-upgrade"
-# tap "shivammathur/php"
-
-# Mac App Store
-brew "mas"
 
 # Basic useful commands
 brew "bash"
@@ -52,7 +48,6 @@ cask "unexpectedly"
 cask "apparency"
 cask "suspicious-package"
 cask "keyboardcleantool"
-cask "surfshark"
 
 # set arguments for all 'brew install --cask' commands
 cask_args appdir: "/Applications/Local", require_sha: true
@@ -73,8 +68,6 @@ cask "fork"
 cask "omnigraffle"
 cask "kaleidoscope"
 cask "nova"
-cask "opera"
-cask "orion"
 cask "rapidapi"
 cask "proxyman"
 cask "spamsieve"
@@ -93,7 +86,6 @@ cask "microblog"
 cask "screens"
 cask "virtualbuddy"
 cask "localsend"
-cask "ghostty"
 
 # -- Mac App Store Apps
 # Tot
