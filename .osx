@@ -201,6 +201,9 @@ defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.DiskUtility advanced-image-options -bool true
 
+# Tells Xcode to use the system git!!!
+defaults write com.apple.dt.Xcode IDEPackageSupportUseBuiltinSCM -bool true
+
 ##################
 #
 # Setup working environments
