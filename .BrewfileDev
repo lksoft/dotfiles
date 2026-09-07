@@ -1,11 +1,3 @@
-# Install needed taps
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-tap "homebrew/services"
-tap "homebrew/cask-fonts"
-tap "buo/cask-upgrade"
-
 # Basic useful commands
 brew "bash"
 brew "git"
@@ -28,7 +20,6 @@ cask "qlcolorcode"
 # -- These don't have sha256 defined
 cask_args appdir: "/Applications/Local", require_sha: false
 cask "sync"
-cask "unexpectedly"
 cask "apparency"
 cask "suspicious-package"
 cask "keyboardcleantool"
@@ -45,7 +36,6 @@ cask "betterzip"
 cask "coderunner"
 cask "fork"
 cask "kaleidoscope"
-cask "sf-symbols"
 cask "xscope"
 cask "marked"
 cask "dropdmg"
